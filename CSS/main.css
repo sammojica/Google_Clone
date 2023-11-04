@@ -1,0 +1,192 @@
+body{
+    margin: 0; /*Margen*/
+    padding: 0; /*Margen hacia dentro*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+/* ************************Header*********************************** */
+
+header{
+    width: 100%;  /*Ancho*/
+    height: 60px; /*Alto*/
+}
+ 
+header nav{
+    display: flex; /*Justificar a la derecha*/
+    justify-content: flex-end;
+}
+
+header nav .nav-right-section{
+    width: 220px;
+    height: auto;
+    list-style: none;  /*Eliminar puntitos*/
+    display: flex; /*los separa pues*/
+    justify-content: center;
+    align-items: center; /*Centrado verticalmente*/
+}
+
+a{
+    text-decoration: none; /*Eliminar lineas debajo del texto*/
+}
+
+nav .nav-right-section a{
+    color: black; /*El margen entre gmail, imagenes y foto*/
+    margin-right: 20px;
+}
+/*edicion del menu*/
+nav .nav-right-section .menu{ /*icono menu*/
+    background-image: url(https://img.icons8.com/ios-glyphs/90/00000/circled-menu.png);
+    background-size: contain; /*esta propiedad hace que la imagen este contenida en el elemento*/
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat; /*quita el duplicado de las imagenes*/
+}
+
+/*Editar img del usuario*/
+nav .nav-right-section img{
+    border-radius: 100%; /*redondear el borde*/
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+}
+
+/* ************************Main*********************************** */
+main{
+    margin-top: 50px; /*agregar espacio entre header y main*/
+    text-align: center;
+}
+
+main .main-logo{
+    width: 470px;
+    margin: 0 auto; /*centrar gracias a los margenes automaticos*/
+}
+
+main .main-logo img{
+    height: 90px;
+}
+
+main .main-input{
+    width:  530px;
+    margin: 0 auto; /*centrar gracias a los margenes automaticos*/
+    margin-top: 20px;
+}
+
+main .main-input-container{
+    /*ancho borde || borde-estilo || borde-color*/
+    border: 1px solid #dfe1e5;  
+    border-radius: 25px;
+    width: 525px;
+}
+
+main .main-input input{
+    height: 45px;
+    border: none; /*quitamos el borde*/ 
+    outline: none; /*quitar el borde cuanto este activo el input*/
+    width: 430px;
+}
+
+main .main-input .search-icon{
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    background-size: contain;
+    padding-left: 7%;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+main .main-input .micro-icon{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    background-size: contain;
+    padding-left: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+main .main-input .cam-icon{
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
+    background-size: contain;
+    padding-right: 10%;
+    background-repeat: no-repeat;
+    margin-left:7px;
+}
+
+/*BOTONES DE BUSQUEDA*/
+main .main-buttons{
+    display: flex; 
+    margin-top: 25px;
+    justify-content: center;
+}
+
+main .main-buttons .button-suerte button{
+    font-size: 14px;
+    margin-left: 13px;
+    background-color: #f8f9fa;
+    border: none;
+    height: 40px;
+    width: 150px;
+    color: rgb(66, 66, 66);
+    border-radius: 5px;
+}
+
+main .main-buttons .button-buscar button{
+    font-size: 14px;
+    background-color: #f8f9fa;
+    border: none;
+    height: 40px;
+    width: 150px;
+    color: rgb(66, 66, 66);
+    border-radius: 5px;
+}
+
+/*PIE DE PAGINA*/
+footer{
+    background-color: #f0f1f3;
+    position: fixed;
+    bottom: 30px;
+    left: 0;
+    height: 7%;
+    width: 100%;
+    border-bottom: 1px solid #dfe1e5;
+}
+
+footer .pais{
+    text-align: start;
+    font-size: 15px;
+    padding-left: 30px;
+    color: #70757A;
+}
+
+footer .about-google{
+    background-color: #f0f1f3;
+    display: flex;
+    border-top: 1px solid #dad9d9;
+    margin-top: 10px;
+}
+
+footer .about-google ul{
+    list-style: none;
+    display: flex;
+    padding-left: 35px;
+    padding-top: 2px;
+}
+
+footer .about-google .left a{
+    margin-right: 30px;
+    font-size: 14px;
+    color: #70757A;
+}
+
+footer .about-google .right {
+    text-align: right;
+    margin-left: auto;
+    padding-inline-end: 5px;
+}
+
+footer .about-google .right a{
+    margin-right: 30px;
+    font-size: 14px;
+    color: #70757A;
+}
+
